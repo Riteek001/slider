@@ -1,7 +1,8 @@
 <!DOCTYPE html>  
 <html>  
 <head>  
-    <meta charset="utf-8" />  
+    <meta charset="utf-8" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
     <title>My Slider</title>  
     <style type="text/css"> 
 
@@ -157,6 +158,24 @@ box-shadow: -30px 30px 20px rgba(0,0,0,0.5);
   animation-name: fade;
   animation-duration: 1.4s;
 }
+.container-fluid {
+    position: absolute;
+    text-align: center;
+    color:#fff;
+    margin-left: 37%;
+  font-size: 35px;
+  top:40px;
+
+
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-github:hover {
+    color: yellow;
+    transform: translateY(-10px);
+}
+  
+.fab {
+    color: white;
+}
 
 @-webkit-keyframes fade {
   from {opacity: .5}
@@ -178,6 +197,20 @@ box-shadow: -30px 30px 20px rgba(0,0,0,0.5);
         <div class="max-width">
             <div class="logo"><a href="#">Mr.<span>Pandit</span></a></div>
             </div>
+            <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/profile.php?id=100011526964375" target="_blank"><i class="fab fa-facebook"></i></a> &nbsp; &nbsp;&nbsp;&nbsp;
+
+                <a href="https://www.instagram.com/riteek_pandit/" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp; &nbsp;&nbsp;&nbsp;
+
+                <a href="https://twitter.com/pandit_riteek?t=3G0ALByTrx3e_vmXiXoJsQ&s=09" target="_blank"><i class="fab fa-twitter"></i></a> &nbsp; &nbsp;&nbsp;&nbsp;
+
+                <a href="https://www.linkedin.com/in/riteek-pandit-896a611b1/" target="_blank"><i class="fab fa-linkedin"></i></a> &nbsp; &nbsp;&nbsp;&nbsp;
+
+                <a href="https://github.com/Riteek001" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
     </nav>
 
 
@@ -242,7 +275,11 @@ box-shadow: -30px 30px 20px rgba(0,0,0,0.5);
   <span class="dots" onclick="currentSlide(3)"></span>
   <span class="dots" onclick="currentSlide(4)"></span>
   <span class="dots" onclick="currentSlide(5)"></span>
-</div>  
+</div> 
+
+<footer id="footer">
+        
+    </footer> 
   
     <script type="text/javascript">  
         var slidePosition = 1;
